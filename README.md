@@ -10,7 +10,7 @@ formats, including:
  - HTML, Markdown and other text formats
  - Images such as PNG, JPEG, GIF and others.
 
-More information, [online demonstrations](https://s.com/demo) and
+More information, [online demonstrations](https://documentalchemy.com/demo) and
 [interactive API documentation](https://documentalchemy.com/api-doc#!/DocumentAlchemy)
 can be found at <https://documentalchemy.com>.
 
@@ -44,4 +44,4 @@ Please  if you have any questions, suggestions or requests.
 
 You may use the GitHub issue tracking system to report issues *with this sample code*. However GitHub is not an appropriate or effective way to request support or report issues with Document Alchemy itself.
 
-For Document Alchemy support, use the [contact us](https://documentalchemy.com/contact-us) form on our website.
+For Document Alchemy support, use the [contact us](https://documentalchemy.com/contact-us) form on our website or email us at <img src="https://documentalchemy.com/images/support-at.png" height=15>.
