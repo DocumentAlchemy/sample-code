@@ -16,7 +16,7 @@ $out_file = 'qr-code.png';     # The file to save the image to.
 
 # Next we construct the URL we'll request.
 $base_url = 'https://documentalchemy.com/api/v1/data/-/rendition/qr.png';
-$uri = $base_url . '?data=' . $data . "&size=" . $size;
+$uri = $base_url . '?data=' . urlencode($data) . "&size=" . $size;
 
 # Open a file for writing.
 $fp = fopen($out_file, 'wb');
