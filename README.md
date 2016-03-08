@@ -1,6 +1,6 @@
 ## Sample Code for the Document Alchemy API
 
-[Document Alchmey](https://documentalchemy.com) provides an easy-to-use API for
+[Document Alchemy](https://documentalchemy.com) provides an easy-to-use API for
 generating, transforming, converting and processing documents in various
 formats, including:
 
