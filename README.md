@@ -44,4 +44,6 @@ Please  if you have any questions, suggestions or requests.
 
 You may use the GitHub issue tracking system to report issues *with this sample code*. However GitHub is not an appropriate or effective way to request support or report issues with Document Alchemy itself.
 
-For Document Alchemy support, use the [contact us](https://documentalchemy.com/contact-us) form on our website or email us at <div style="display:inline-block;vertical-align:middle"><img src="https://documentalchemy.com/images/support-at.png" height=15></div>.
+For Document Alchemy support, use the [contact us](https://documentalchemy.com/contact-us) form on our website or email us at <img id="supat" src="https://documentalchemy.com/images/support-at.png" height=15>.
+
+<style>img#supat { vertical-align:middle;}</style>
