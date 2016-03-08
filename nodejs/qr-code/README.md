@@ -16,7 +16,7 @@ For example, if your API key value is `HbblCNv7gLN2pasWFK44`, the command:
 node create-qr-code HbblCNv7gLN2pasWFK44 "https://documentalchemy.com"
 ```
 
-will create a file (by default named `qr-code.png` in the current working
-directory) containing a QR code the encodes the URL
+will create a file (by default within the current working directory and named
+`qr-code.png`) containing a QR code the encodes the URL
 `https://documentalchemy.com`.  Scanning that QR code with your smartphone
-should open the DocumentAlchemy home page in your browser.
+should open the [DocumentAlchemy home page](https://documentalchemy.com) in your browser.
