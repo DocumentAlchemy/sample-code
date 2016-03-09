@@ -6,5 +6,4 @@ JavaScript environment.
 
 ## Contents
 
- * **[qr-code](./qr_code)** - a simple example of using the DocumentAlchemy API
-   to generate a QR code encoding arbitrary data.
+ * **[qr-code](./qr-code)** -  This is the simplest example, using the core Node modules to invoke the DocumentAlchemy API to generate a QR code encoding arbitrary data.
