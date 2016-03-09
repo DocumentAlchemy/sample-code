@@ -7,37 +7,54 @@
 # https://documentalchemy.com/api-doc#!/DocumentAlchemy/get_data_rendition_qr_png
 # for more information.
 
-# First let's set some variables we'll use below.
+# SANTITY CHECK
+# If we're missing the API-KEY or TEXT-TO-ENCODE parameters,
+# print usage instructions and exit.
+if(count($argv) < 3) {
+  echo "USE: <API-KEY> <TEXT-TO-ENCODE> [<OUTPUT-FILE-NAME>]\n";
+  exit(1);
+} else {
 
-$api_key = 'CHANGE ME';        # PLEASE BE SURE TO CHANGE THE VALUE OF $api_key
-$data = 'http://example.com/'; # This is the data we'll encode.
-$size = 200;                   # The size of the image (in pixels).
-$out_file = 'qr-code.png';     # The file to save the image to.
+# Otherwise continue with the real work of the script.
 
-# Next we construct the URL we'll request.
-$base_url = 'https://documentalchemy.com/api/v1/data/-/rendition/qr.png';
-$uri = $base_url . '?data=' . urlencode($data) . "&size=" . $size;
+  # Read parameters from the command line and set up other variables.
 
-# Open a file for writing.
-$fp = fopen($out_file, 'wb');
+  $api_key  = $argv[1];
+  $data     = $argv[2];
+  $size    = 200;                # The size of the image (in pixels).
+  $out_file = 'qr-code.png';     # The file to save the image to.
+  if(count($argv) >= 4) {
+    $out_file = $argv[3];
+  }
 
-# Initialize the curl request.
-$ch = curl_init($uri);
+  # Construct the URL we'll request.
+  $base_url = 'https://documentalchemy.com/api/v1/data/-/rendition/qr.png';
+  $uri = $base_url . '?data=' . urlencode($data) . "&size=" . $size;
 
-# Configure the request.  Note that we add an `Authorization` header
-# containing the API key.
-curl_setopt_array($ch, array(
-  CURLOPT_HTTPHEADER      => array('Authorization: da.key=' . $api_key),
-  CURLOPT_RETURNTRANSFER  => true,
-  CURLOPT_VERBOSE         => 1,
-  CURLOPT_FILE            => $fp,
-  CURLOPT_HEADER          => 0
-));
+  # Open a file for writing.
+  $fp = fopen($out_file, 'wb');
 
-# Execute the request.
-curl_exec($ch);
+  # Initialize the curl request.
+  $ch = curl_init($uri);
 
-# Finally close the request.
-curl_close($ch);
+  # Configure the request.  Note that we add an `Authorization` header
+  # containing the API key.
+  curl_setopt_array($ch, array(
+    CURLOPT_HTTPHEADER      => array('Authorization: da.key=' . $api_key),
+    CURLOPT_RETURNTRANSFER  => true,
+    CURLOPT_VERBOSE         => 1,
+    CURLOPT_FILE            => $fp,
+    CURLOPT_HEADER          => 0
+  ));
+
+  # Execute the request.
+  curl_exec($ch);
+
+  # Finally close the request.
+  curl_close($ch);
+
+  # And echo our results to the terminal.
+  echo "QR code image saved at \"" . $out_file . "\".";
+}
 
 ?>
