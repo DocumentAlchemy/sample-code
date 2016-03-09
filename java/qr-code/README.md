@@ -10,7 +10,7 @@ Assuming you have Java installed you can compile the program via:
 javac CreateQRCode.java
 ```
 
-and then run the program via:
+(which should generate `CreateQRCode.class`) and then run the program via:
 
 ```bash
 java CreateQRCode <API-KEY> <TEXT-TO-ENCODE> [<OUTPUT-FILE-NAME>]

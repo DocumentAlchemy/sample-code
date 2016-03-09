@@ -26,9 +26,9 @@ if(count($argv) < 3) {
   if(count($argv) >= 4) {
     $out_file = $argv[3];
   }
+  $base_url = 'https://documentalchemy.com/api/v1/data/-/rendition/qr.png';
 
   # Construct the URL we'll request.
-  $base_url = 'https://documentalchemy.com/api/v1/data/-/rendition/qr.png';
   $uri = $base_url . '?data=' . urlencode($data) . "&size=" . $size;
 
   # Open a file for writing.

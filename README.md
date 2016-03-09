@@ -23,8 +23,9 @@ Note that most of these examples require a Document Alchemy API key.  You can ge
 an API key immediately and for free by
 [signing for Document Alchemy](https://documentalchemy.com/pricing?c=gheg).
 
- * [Node.js](./nodejs) - sample code using the [Node.js](https://nodejs.org/en/) / [IO.js](https://iojs.org/) server-side-JavaScript environment.
+ * [Java](./java) - sample code using the Java platform.
  * [PHP](./php) - sample code using [PHP](http://php.net/).
+ * [Node.js](./nodejs) - sample code using the [Node.js](https://nodejs.org/en/) / [IO.js](https://iojs.org/) server-side-JavaScript environment.
 
 
 More examples are coming soon. Please [contact us](https://documentalchemy.com/contact-us) if you have any questions, suggestions or requests.
