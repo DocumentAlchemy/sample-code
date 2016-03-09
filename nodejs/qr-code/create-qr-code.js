@@ -67,7 +67,7 @@ if (process.argv.length < 4) {
     if (res.statusCode == '200') {
       var outputFile = fs.createWriteStream(fileName);
       res.pipe(outputFile);
-      console.log("QR code image saved as \""+fileName+"\".");
+      console.log("QR code image saved at \""+fileName+"\".");
     } else {
       console.error("Expected HTTP 200, found "+res.statusCode+".");
       process.exit(2);
