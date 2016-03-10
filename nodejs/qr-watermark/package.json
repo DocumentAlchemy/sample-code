@@ -8,7 +8,7 @@
   "license"                : "MIT",
   "main"                   : "./qr-watermark.js",
   "bin": {
-    "qr-watermark"         : "./qr-watermark.js",
+    "qr-watermark"         : "./qr-watermark.js"
   },
   "repository": {
     "type"                 : "git",
