@@ -122,10 +122,12 @@ function watermarkPDF(apiKey, watermarkDocId, pdfFile, outputFile, callback) {
   var out = fs.createWriteStream(outputFile);
 
   // Submit the request and pipe the results to the file.
-  request.post(params).pipe(out);
-
+  var req = request.post(params)
+  req.pipe(out);
   // Finally callback with the name of the newly created file.
-  callback(null,outputFile);
+  req.on('end',function(){
+    callback(null,outputFile);
+  });
 }
 
 
