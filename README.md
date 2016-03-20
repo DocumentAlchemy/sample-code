@@ -21,12 +21,12 @@ programming languages.
 
 Note that most of these examples require a Document Alchemy API key.  You can get
 an API key immediately and for free by
-[signing for Document Alchemy](https://documentalchemy.com/pricing?c=gheg).
+[signing up for Document Alchemy](https://documentalchemy.com/pricing?c=gheg).
 
- * [Java](./java) - sample code using the Java platform.
+ * [Java](./java) - sample code using the [Java](https://java.com/) platform.
  * [PHP](./php) - sample code using [PHP](http://php.net/).
- * [Node.js](./nodejs) - sample code using the [Node.js](https://nodejs.org/en/) / [IO.js](https://iojs.org/) server-side-JavaScript environment.
-
+ * [Python](./python) - sample code using [Python](http://python.org/).
+ * [Node.js](./nodejs) - sample code using the [Node.js](https://nodejs.org/) / [IO.js](https://iojs.org/) server-side-JavaScript environment.
 
 More examples are coming soon. Please [contact us](https://documentalchemy.com/contact-us) if you have any questions, suggestions or requests.
 
