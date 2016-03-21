@@ -114,7 +114,7 @@ function watermarkPDF(apiKey, watermarkDocId, pdfFile, outputFile, callback) {
     url: url,
     headers: { "Authorization": "da.key="+apiKey },
     formData: {
-      document: fs.createReadStream(pdfFile),
+      document: fs.createReadStream(pdfFile)
     }
   };
 
