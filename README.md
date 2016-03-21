@@ -24,9 +24,9 @@ an API key immediately and for free by
 [signing up for Document Alchemy](https://documentalchemy.com/pricing?c=gheg).
 
  * [Java](./java) - sample code using the [Java](https://java.com/) platform.
+ * [Node.js](./nodejs) - sample code using the [Node.js](https://nodejs.org/) / [IO.js](https://iojs.org/) server-side-JavaScript environment.
  * [PHP](./php) - sample code using [PHP](http://php.net/).
  * [Python](./python) - sample code using [Python](http://python.org/).
- * [Node.js](./nodejs) - sample code using the [Node.js](https://nodejs.org/) / [IO.js](https://iojs.org/) server-side-JavaScript environment.
 
 More examples are coming soon. Please [contact us](https://documentalchemy.com/contact-us) if you have any questions, suggestions or requests.
 
