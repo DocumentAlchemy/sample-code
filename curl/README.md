@@ -5,4 +5,6 @@ This directory contains examples of using the DocumentAlchemy API with
 
 ## Contents
 
- * **qr-code** - This is the simplest example which submits a simple GET request to the DocumentAlchemy API to generate a QR code encoding arbitrary data.
+ * **qr-code** - Submits a GET request to the DocumentAlchemy API to generate a QR code encoding arbitrary data.
+
+ * **ms-office-to-pdf** - Converts a Microsoft Office document (.docx, .xslx, pptx, etc.) into a PDF via the command line.
