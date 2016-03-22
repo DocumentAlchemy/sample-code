@@ -23,6 +23,7 @@ Note that most of these examples require a Document Alchemy API key.  You can ge
 an API key immediately and for free by
 [signing up for Document Alchemy](https://documentalchemy.com/pricing?c=gheg).
 
+ * [curl](./curl) - sample code using [curl](https://curl.haxx.se/) and [bash](https://www.gnu.org/software/bash/) shell scripting.
  * [Java](./java) - sample code using the [Java](https://java.com/) platform.
  * [Node.js](./nodejs) - sample code using the [Node.js](https://nodejs.org/) / [IO.js](https://iojs.org/) server-side-JavaScript environment.
  * [PHP](./php) - sample code using [PHP](http://php.net/).
