@@ -99,7 +99,3 @@ default.
 
 See the comments within the file itself for more information about how the
 script works.
-
-
-
-To execute the command using your DocumentAlchemy API key, you may use:
