@@ -13,7 +13,7 @@
 # Sign up at <https://documentalchemy.com/> to get your free API key.
 DA_API_KEY=${DA_API_KEY:-"EDs2UQEprGn9aD4vg6HCPhFvgQFDahQgRzzIfocJ"}
 DATA=$1
-SIZE="400"
+SIZE="200"
 OUTFILE="qr.png"
 
 #------------------------------------------------------------------------------
@@ -68,7 +68,6 @@ if [ "$#" -eq "2" ]; then
   if [ "`is_int $2`" -eq "1" ]; then
     SIZE=$2
   else
-    SIZE="200"
     OUTFILE=$2
   fi
 elif [ "$#" -gt "2" ]; then
