@@ -77,9 +77,18 @@ fi
 #------------------------------------------------------------------------------
 # EXECUTE REQUEST
 #------------------------------------------------------------------------------
-curl --silent \
+response=$(curl --silent \
+     --write-out %{http_code} \
      -H "Authorization: da.key=$DA_API_KEY" \
      -G https://documentalchemy.com/api/v1/data/-/rendition/qr.png \
      --data-urlencode "data=$DATA" \
      --data-urlencode "size=$SIZE" \
-     -o "$OUTFILE"
+     -o "$OUTFILE")
+
+#------------------------------------------------------------------------------
+# CHECK RESPONSE
+#------------------------------------------------------------------------------
+if ! [ "$response" -eq "200" ]; then
+  echo "Warning: Expected a 200 response, found $response instead.";
+  exit 2;
+fi
