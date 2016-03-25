@@ -5,6 +5,8 @@ This directory contains examples of using the DocumentAlchemy API within the
 
 ## Contents
 
- * **qr-code** - This is the simplest example, using the core Python modules (urllib2) to invoke the DocumentAlchemy API to generate a QR code encoding arbitrary data.
+ * **[qr-code](./qr-code)** - This is the simplest example, using the core Python modules (urllib2) to invoke the DocumentAlchemy API to generate a QR code encoding arbitrary data.
 
- * **qr-watermark** - Generate a new QR code image and store it in the DocumentAlchemy file-store. Then stamp that image as a watermark on each page of a PDF document.
+ * **[qr-watermark](./qr-watermark)** - Generate a new QR code image and store it in the DocumentAlchemy file-store. Then stamp that image as a watermark on each page of a PDF document.
+
+ * **[ms-office-to-pdf](./ms-office-to-pdf)** - Converts Microsoft Word, PowerPoint or Excel documents to PDF.
