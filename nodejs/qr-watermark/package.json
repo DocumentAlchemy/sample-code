@@ -1,7 +1,7 @@
 {
   "author"                 : "Document Alchemy <api@documentalchemy.com>",
   "name"                   : "da-qr-watermark",
-  "version"                : "1.0.1",
+  "version"                : "0.9.0",
   "description"            : "An example of using the DocumentAlchemy API to generate a QR code and then stamp it on each page of a PDF as a watermark image.",
   "keywords"               : ["api","QR","qr-code","PDF","watermark","document"],
   "homepage"               : "https://documentalchemy.com",
