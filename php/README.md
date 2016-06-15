@@ -4,4 +4,6 @@ This directory contains examples of using the DocumentAlchemy API with PHP.
 
 ## Contents
 
- * **[qr-code](./qr-code)** -  This is the simplest example, using the core PHP libraries to invoke the DocumentAlchemy API to generate a QR code encoding arbitrary data.
+ * **[word-count](./word-count)** - Uses the core PHP libraries to invoke the DocumentAlchemy API to generate a count the number of words in a PDF or Microsoft Word file.
+
+ * **[qr-code](./qr-code)** - Uses the core PHP libraries to invoke the DocumentAlchemy API to generate a QR code encoding arbitrary data.
